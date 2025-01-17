@@ -34,4 +34,6 @@ Route::get("v9advinLogin",[UserController_v9::class, "v9advinLogin"]);
 // v11
 Route::get("v11_Blade",[UserController_v9::class, "v11_Blade"]);
 
- 
+//  v12
+Route::view('/v12_home', 'v12_home');
+
