@@ -19,6 +19,8 @@ class UserController_v9 extends Controller
         // return "v9 get_user_dynamic_name__v9_controller Hari Kumar shaha ".$name;
         return view('get_user_dynamic_name__v9_controller',['name'=>$name]);
     }
+
+    // v10 view check if view exit or not
     function v9advinLogin(){
         if(View::exists('v9_admin.v9_login')){
 
@@ -26,5 +28,11 @@ class UserController_v9 extends Controller
         } else{
             echo "no page found";
         }
+
+    }
+    function v11_Blade(){
+        $name = "Sita Ram";
+        $users = ["hari", "Sita", "Gita"];
+        return view('v11_Blade', ['name' => $name, 'users' => $users]);
     }
 }

@@ -31,5 +31,7 @@ Route::get("get_user_dynamic_name__v9_controller/{name}",[UserController_v9::cla
 Route::get("v9advinLogin",[UserController_v9::class, "v9advinLogin"]);
 
 
+// v11
+Route::get("v11_Blade",[UserController_v9::class, "v11_Blade"]);
 
  
