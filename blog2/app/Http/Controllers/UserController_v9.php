@@ -38,12 +38,12 @@ class UserController_v9 extends Controller
 
     // v14 input
     function v14_addUser(Request $req){
-        echo "user name is $req->name";
-        echo "<br>";
-        echo $req-> email  ;
-        echo "<br>";
-        echo $req-> city  ;
-        echo "<br>";
-        // return $req;
+        // echo "user name is $req->name";
+        // echo "<br>";
+        // echo $req-> email  ;
+        // echo "<br>";
+        // echo $req-> city  ;
+        // echo "<br>";
+        return $req;
     }
 }
