@@ -37,3 +37,10 @@ Route::get("v11_Blade",[UserController_v9::class, "v11_Blade"]);
 //  v12
 Route::view('/v12_home', 'v12_home');
 
+
+// v14
+Route::view('/v14_user_form', 'v14_user_form');
+
+// this first post usl and our form action="have same"
+Route::post('/v14_addUser',[UserController_v9::class, "v14_addUser"]);
+
