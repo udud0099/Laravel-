@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class UserController_v9 extends Controller
 {
@@ -19,6 +20,11 @@ class UserController_v9 extends Controller
         return view('get_user_dynamic_name__v9_controller',['name'=>$name]);
     }
     function v9advinLogin(){
-        return view('v9_admin.v9_login');
+        if(View::exists('v9_admin.v9_login')){
+
+            return view('v9_admin.v9_login');
+        } else{
+            echo "no page found";
+        }
     }
 }
